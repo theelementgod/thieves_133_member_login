@@ -1,0 +1,65 @@
+* {
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+}
+
+.container {  
+    
+    display: grid;
+    grid-template-columns: 0.9fr 1.2fr 0.9fr;
+    grid-template-rows: 0.6fr 1.6fr 0.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "leftblank loginarea rightblank"
+      "Footer Footer Footer";
+  }
+  
+  .header { 
+    
+    grid-area: header;
+    height: 25vh; 
+}
+
+img {
+    height: 235px;
+    padding-left: 370px;
+    padding-right: 370px;
+}
+  
+  .leftblank { 
+    grid-area: leftblank;
+    height: 25vh; 
+}
+  
+  .rightblank { 
+    grid-area: rightblank;
+    height: 25vh; 
+}
+  
+  .loginarea { 
+    grid-area: loginarea;
+    height: 25vh; 
+}
+  
+  .Footer { 
+    grid-area: Footer;
+    height: 20vh; 
+}
+  
