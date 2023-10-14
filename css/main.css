@@ -58,8 +58,8 @@ img {
     height: 25vh; 
 }
   
-  .Footer { 
-    grid-area: Footer;
-    height: 20vh; 
-}
+ .footinfo {
+  display: flex;
+  justify-content: space-between;
+ }
   
